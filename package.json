@@ -1,5 +1,5 @@
 {
-  "name": "RingChasers",
+  "name": "ring-chasers",
   "private": true,
   "scripts": {
     "build": "turbo run build",
