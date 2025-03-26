@@ -23,7 +23,7 @@
 [![Issues][issues-shield]][issues-url]
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+[![Discord][discord-shield]][discord-url]
 
 
 <!-- PROJECT LOGO -->
@@ -241,3 +241,5 @@ Project Link: [https://github.com/Ring-Chasers/RingChasers](https://github.com/R
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [product-screenshot]: images/screenshot.png
+[discord-shield]: https://img.shields.io/discord/1351221283483815936
+[discord-url]: https://discord.gg/xwmWPftAC8
