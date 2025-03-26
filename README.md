@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Ring Chasers Screen Shot][product-screenshot]](https://example.com)
 
 This project was created because I wanted to make my own fantasy basketball application that I could use whenever I wanted and is something I want to use personally, but anyone is free to use it however they'd like. This app was made purely for fun.
 
@@ -112,7 +112,6 @@ This is a full stack application to make playing fantasy basketball fun with fri
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   nvm install 23
@@ -148,9 +147,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Nothing here as of yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,13 +157,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Serve static files with NestJS
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-- [] Feature 4
-- [] Feature 5
-- [] Feature 6
-- [] Feature 7
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+- [ ] Feature 4
+- [ ] Feature 5
+- [ ] Feature 6
+- [ ] Feature 7
 
 See the [open issues](https://github.com/Ring-Chasers/RingChasers/issues) for a full list of proposed features (and known issues).
 
