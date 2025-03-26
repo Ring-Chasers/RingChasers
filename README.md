@@ -207,7 +207,7 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [LinkedIn](https://www.linkedin.com/in/kevinvargaslaracuente/) - kevinvar2805@gmail.com
+Kevin Vargas - [LinkedIn](https://www.linkedin.com/in/kevinvargaslaracuente/) - kevinvar2805@gmail.com
 
 Project Link: [https://github.com/Ring-Chasers/RingChasers](https://github.com/Ring-Chasers/RingChasers)
 
