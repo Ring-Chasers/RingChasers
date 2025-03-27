@@ -6,6 +6,7 @@ import Leaderboard from "./pages/Leaderboard/Leaderboard.tsx";
 import Profile from "./pages/Profile/Profile.tsx";
 import NotFound from "./pages/NotFound/NotFound.tsx";
 import Navigation from "./components/Navigation.tsx";
+import Signup from './pages/Signup/Signup.tsx';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/matchups" element={<Matchups />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
