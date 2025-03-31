@@ -86,8 +86,8 @@
 This project was created because I wanted to make my own fantasy basketball application that I could use whenever I wanted and is something I want to use personally, but anyone is free to use it however they'd like. This app was made purely for fun.
 
 Here's why you should use it:
-* You should not have to pay money to play fantasy basketball
-* If you do not like big businesses then this can be your go to
+* It will be randomly generated based on the player so there will be more unexpected results
+* It is entirely free to use, no need to pay money for a game to start
 * You should just enjoy the app :smile:
 
 This app is not perfect and will probably never will be perfect but if you have any recommendations feel free to contact me about it through email or through an issue request, either way I am more than glad to take any criticisms because it will only improve my app.
@@ -156,13 +156,13 @@ Nothing here as of yet
 ## Roadmap
 
 - [x] Serve static files with NestJS
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-- [ ] Feature 4
-- [ ] Feature 5
-- [ ] Feature 6
-- [ ] Feature 7
+- [ ] Authentication
+- [ ] Start a "Fantasy Match"
+- [ ] Invite friends to a "Fantasy Match"
+- [ ] Create simulated brackets for "Fantasy Match" (2 options: Random or Actual Playoff Teams)
+- [ ] Make a daily simulation of stats (Generate stats for the players)
+- [ ] Admin Panel to modify game rules
+- [ ] Create a currency to purchase items for your profile (not a real currency)
 
 See the [open issues](https://github.com/Ring-Chasers/RingChasers/issues) for a full list of proposed features (and known issues).
 
