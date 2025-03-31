@@ -155,7 +155,7 @@ Nothing here as of yet
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Serve static files with NestJS
+- [ ] Setup a good looking style based on logo colors
 - [ ] Authentication
 - [ ] Start a "Fantasy Match"
 - [ ] Invite friends to a "Fantasy Match"
