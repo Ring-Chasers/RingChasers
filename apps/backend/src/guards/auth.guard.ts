@@ -19,7 +19,7 @@ export class AuthGuard implements CanActivate {
     if (!app) {
       throw new UnauthorizedException();
     }
-    const idToken = context.getArgs()[0]?.headers?.authorization.split(' ')[1];
+    const idToken: string = context.getArgs()[0]?.headers?.authorization.split(' ')[1];
 
     const permissions = this.reflector.get<string[]>(
       'permissions',

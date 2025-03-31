@@ -41,5 +41,5 @@ export class UserDto {
 
   @IsNotEmpty()
   @IsEnum(Permissions, { each: true })
-  role: Permissions[];
+  permissions: Permissions[];
 }

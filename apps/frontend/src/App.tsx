@@ -10,20 +10,18 @@ import Signup from './pages/Signup/Signup.tsx';
 
 const App = () => {
   return (
-    <div id="app">
+    <Router>
       <Navigation/>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/draft" element={<Draft />} />
-          <Route path="/matchups" element={<Matchups />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/draft" element={<Draft />} />
+        <Route path="/matchups" element={<Matchups />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

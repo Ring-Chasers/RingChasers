@@ -7,7 +7,14 @@ export class UserService {
   constructor(private readonly admin: FirebaseAdmin) {}
 
   async createUser(userRequest: UserDto): Promise<any> {
-    const { email, password, firstName, lastName, role } = userRequest;
+    const { email, password, firstName, lastName, permissions } = userRequest;
+    console.log('called', {
+      email,
+      password,
+      firstName,
+      lastName,
+      permissions,
+    });
     const app = this.admin.setup();
     if (!app) {
       throw new BadRequestException('app does not exist');
@@ -18,10 +25,12 @@ export class UserService {
         password,
         displayName: `${firstName} ${lastName}`,
       });
-      await app.auth().setCustomUserClaims(createdUser.uid, { role });
+      await app.auth().setCustomUserClaims(createdUser.uid, { permissions });
       return createdUser;
-    } catch (error) {
-      throw new BadRequestException(error.message);
+    } catch (error: any) {
+      if (error instanceof Error) {
+        throw new BadRequestException(error.message);
+      }
     }
   }
 }

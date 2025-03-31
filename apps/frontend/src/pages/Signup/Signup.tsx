@@ -5,10 +5,12 @@ const Signup = () => {
   const handleSignup = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formdata = new FormData(e.currentTarget);
+    const firstName = formdata.get('firstName');
+    const lastName = formdata.get('lastName');
     const email = formdata.get('email');
     const password = formdata.get('password');
     toast.promise(
-      async () => await axios.post('/api/signup', {email, password}),
+      async () => await axios.post('/api/user/signup', {email, password, firstName, lastName, permissions: 'USER'}),
       {
         loading: 'Loading',
         success: () => {
@@ -31,6 +33,12 @@ const Signup = () => {
     <form onSubmit={handleSignup} className="flex justify-center mt-20">
       <fieldset className="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
         <legend className="fieldset-legend">Signup</legend>
+
+        <label className="fieldset-label">First Name</label>
+        <input name="firstName" type="text" className="input" placeholder="First Name" required/>
+
+        <label className="fieldset-label">Last Name</label>
+        <input name="lastName" type="text" className="input" placeholder="Last Name" required/>
 
         <label className="fieldset-label">Email</label>
         <input name="email" type="email" className="input" placeholder="Email" required/>

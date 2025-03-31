@@ -9,13 +9,13 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../..', 'frontend', 'dist'),
+      rootPath: join(__dirname, '../../..', 'frontend', 'dist'),
     }),
     UserModule,
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',
-  }),
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
