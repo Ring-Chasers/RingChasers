@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Ring-Chasers/RingChasers">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/apps/frontend/public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Ring Chasers</h3>
