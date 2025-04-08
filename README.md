@@ -156,7 +156,7 @@ Nothing here as of yet
 ## Roadmap
 
 - [ ] Setup a good looking style based on logo colors
-- [ ] Authentication
+- [X] Authentication
 - [ ] Start a "Fantasy Match"
 - [ ] Invite friends to a "Fantasy Match"
 - [ ] Create simulated brackets for "Fantasy Match" (2 options: Random or Actual Playoff Teams)

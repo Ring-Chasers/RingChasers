@@ -7,6 +7,7 @@ import Profile from "./pages/Profile/Profile.tsx";
 import NotFound from "./pages/NotFound/NotFound.tsx";
 import Navigation from "./components/Navigation.tsx";
 import Signup from './pages/Signup/Signup.tsx';
+import Login from './pages/Login/Login.tsx';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

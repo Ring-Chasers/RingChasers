@@ -5,7 +5,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { FirebaseAdmin } from '../../config/firebase.setup';
+import { FirebaseAdmin } from '../../firebase.setup';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -19,16 +19,22 @@ export class AuthGuard implements CanActivate {
     if (!app) {
       throw new UnauthorizedException();
     }
-    const idToken: string = context.getArgs()[0]?.headers?.authorization.split(' ')[1];
 
+    const request = context?.getArgs()[0] as {
+      headers?: { authorization?: string };
+      cookies?: { [key: string]: string };
+    };
+    const auth = request.cookies?.auth;
+    if (!auth) {
+      throw new UnauthorizedException();
+    }
     const permissions = this.reflector.get<string[]>(
       'permissions',
       context.getHandler(),
     );
     try {
-      const claims = await app.auth().verifyIdToken(idToken);
-
-      if (claims.role === permissions[0]) {
+      const claims = await app.auth().verifySessionCookie(auth, true);
+      if (claims.permissions === permissions[0]) {
         return true;
       }
       throw new UnauthorizedException();

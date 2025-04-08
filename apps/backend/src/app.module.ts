@@ -5,7 +5,8 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
-import { FirebaseAdmin } from '../config/firebase.setup';
+import { FirebaseAdmin } from '../firebase.setup';
+import { Firebase } from '../firebaseClient.setup';
 
 @Module({
   imports: [
@@ -19,6 +20,6 @@ import { FirebaseAdmin } from '../config/firebase.setup';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, FirebaseAdmin],
+  providers: [AppService, FirebaseAdmin, Firebase],
 })
 export class AppModule {}

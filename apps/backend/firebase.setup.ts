@@ -11,9 +11,9 @@ export class FirebaseAdmin implements OnApplicationBootstrap {
           './config/firebaseServiceAccountKey.json',
           'utf8',
         );
-        const serviceAccount: admin.ServiceAccount = await JSON.parse(
+        const serviceAccount = JSON.parse(
           firebaseServiceAccountFile,
-        );
+        ) as admin.ServiceAccount;
         app = admin.initializeApp({
           credential: admin.credential.cert(serviceAccount),
         });
