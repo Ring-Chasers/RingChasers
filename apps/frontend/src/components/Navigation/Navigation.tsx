@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import NavMenu from './NavMenu.tsx';
 const Navigation = () => {
   return (
     <div className="navbar bg-base-200 shadow-sm">
@@ -11,32 +11,14 @@ const Navigation = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><Link to="/">Item 1</Link></li>
-            <li>
-              <Link to="/">Parent</Link>
-              <ul className="p-2">
-                <li><Link to="/">Submenu 1</Link></li>
-                <li><Link to="/">Submenu 2</Link></li>
-              </ul>
-            </li>
-            <li><Link to="/">Item 3</Link></li>
+            <NavMenu />
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">Ring Chasers</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Item 1</Link></li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li><Link to="/">Submenu 1</Link></li>
-                <li><Link to="/">Submenu 2</Link></li>
-              </ul>
-            </details>
-          </li>
-          <li><Link to="/">Item 3</Link></li>
+          <NavMenu />
         </ul>
       </div>
       <div className="navbar-end">
