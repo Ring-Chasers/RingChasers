@@ -1,7 +1,8 @@
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
-
+import { useNavigate } from 'react-router-dom';
 const Signup = () => {
+  const navigate = useNavigate();
   const handleSignup = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formdata = new FormData(e.currentTarget);
@@ -14,7 +15,8 @@ const Signup = () => {
       {
         loading: 'Loading',
         success: () => {
-          return 'Signup was successful'
+          navigate('/login');
+          return 'Signup was successful';
         },
         error: (err) => `This just happened: ${err.toString()}`,
       },
@@ -46,7 +48,7 @@ const Signup = () => {
         <label className="fieldset-label">Password</label>
         <input name="password" type="password" className="input" placeholder="Password" required/>
 
-        <button className="btn btn-neutral mt-4">Login</button>
+        <button className="btn btn-neutral mt-4">Signup</button>
       </fieldset>
       <Toaster/>
     </form>

@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound/NotFound.tsx";
 import Navigation from "./components/Navigation/Navigation.tsx";
 import Signup from './pages/Signup/Signup.tsx';
 import Login from './pages/Login/Login.tsx';
+import StartLeague from './pages/StartLeague/StartLeague.tsx';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Navigation/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/start-league" element={<StartLeague/>} />
         <Route path="/draft" element={<Draft />} />
         <Route path="/matchups" element={<Matchups />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
