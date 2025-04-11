@@ -1,3 +1,4 @@
+
 type PlayerDTO = {
   id: string;
   name: string;
@@ -5,6 +6,12 @@ type PlayerDTO = {
   wins: number;
 }
 
+type LeaderboardDTO = {
+  leaderboard: PlayerDTO[];
+  page: number;
+  count: number;
+}
+
 type HandlePageDTO = (pageCount: number) => void;
 
-export type { PlayerDTO, HandlePageDTO };
+export type { PlayerDTO, HandlePageDTO, LeaderboardDTO };

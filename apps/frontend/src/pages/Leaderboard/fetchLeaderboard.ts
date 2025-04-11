@@ -1,13 +1,13 @@
-import axios from 'axios';
-
+import axios, { AxiosResponse } from 'axios';
+import { LeaderboardDTO } from './dto/Leaderboard.dto'
 const fetchLeaderboard = async (page: number, count: number, type: string) => {
-  const leaderboard = await axios.get('/api/leaderboard/' + type, {
+  const leaderboard: AxiosResponse<LeaderboardDTO> = await axios.get('/api/leaderboard/' + type, {
     params: {
       page,
       count,
     },
   });
-  return leaderboard.data;
+  return leaderboard.data.leaderboard;
 }
 
 export default fetchLeaderboard;

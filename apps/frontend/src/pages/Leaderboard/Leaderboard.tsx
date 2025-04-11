@@ -2,11 +2,14 @@ import fetchLeaderboard from './fetchLeaderboard.ts';
 import LeaderboardTable from './LeaderboardTable.tsx';
 import { PlayerDTO } from './dto/Leaderboard.dto.ts';
 import React, { useEffect, useState } from 'react';
+
 const Leaderboard = () => {
+
   const [globalLeaderboard, setGlobalLeaderboard] = useState<PlayerDTO[]>([]);
   const [globalPage, setGlobalPage] = useState(1);
   const [friendLeaderboard, setFriendLeaderboard] = useState<PlayerDTO[]>([]);
   const [friendPage, setFriendPage] = useState(1);
+
   const handleGlobalPage = (pageCount: number) => {
     if (globalPage + pageCount > 0) {
       setGlobalPage(globalPage + pageCount);
@@ -22,13 +25,14 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchData = async (type: string, page: number, setLeaderboard: React.Dispatch<React.SetStateAction<PlayerDTO[]>>) => {
       const data: PlayerDTO[] = await fetchLeaderboard(page, 10, type);
-      if (Array.isArray(data)) {
+      if (data.length > 0) {
         setLeaderboard(data);
       }
     }
     fetchData('global', globalPage, setGlobalLeaderboard);
-    fetchData('friends', friendPage, setFriendLeaderboard);
+    fetchData('friend', friendPage, setFriendLeaderboard);
   }, [globalPage, friendPage]);
+
   return (
     <div id="leaderboard" className="tabs tabs-lift">
       <label className="tab">

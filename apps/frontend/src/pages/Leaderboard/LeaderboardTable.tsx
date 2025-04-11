@@ -1,9 +1,10 @@
 import { PlayerDTO, HandlePageDTO } from './dto/Leaderboard.dto';
 
 const LeaderboardTable = ({ leaderboard, page, handlePage } : { leaderboard: PlayerDTO[], page: number, handlePage: HandlePageDTO}) => {
+
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-primary border border-gray-200">
+      <table className="table">
         <thead>
           <tr>
             <th className="py-2 px-4 border-b">Rank</th>

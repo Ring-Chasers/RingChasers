@@ -7,6 +7,7 @@ import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { FirebaseAdmin } from '../firebase.setup';
 import { Firebase } from '../firebaseClient.setup';
+import { LeaderboardModule } from './leaderboard/leaderboard.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { Firebase } from '../firebaseClient.setup';
       isGlobal: true,
       envFilePath: '.env',
     }),
+    LeaderboardModule,
   ],
   controllers: [AppController],
   providers: [AppService, FirebaseAdmin, Firebase],
