@@ -251,12 +251,12 @@ Project Link: [https://github.com/Ring-Chasers/RingChasers](https://github.com/R
 [TypeScript-url]: https://www.typescriptlang.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Nest.js]: https://img.shields.io/badge/-NestJs-ea2845?style=flat-square&logo=nestjs&logoColor=white
+[Nest.js]: https://img.shields.io/badge/-NestJs-ea2845?style=for-the-badge&logo=nestjs&logoColor=white
 [Nest-url]: https://nestjs.com/
 [Firebase.js]: https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34
 [Firebase-url]: https://firebase.google.com/
 [Tailwind.js]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
-[TurboRepo.js]: https://img.shields.io/badge/-Turborepo-EF4444?style=flat&logo=turborepo&logoColor=white
+[TurboRepo.js]: https://img.shields.io/badge/-Turborepo-EF4444?style=for-the-badge&logo=turborepo&logoColor=white
 [TurboRepo-url]: https://turbo.build/
 [product-screenshot]: images/ring_chasers_sc.png
