@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { LeaderboardService } from './leaderboard.service';
 import { Auth } from '../decorators/auth.decorator';
 
@@ -9,18 +9,24 @@ export class LeaderboardController {
   @Get('global')
   @Auth('USER')
   findGlobalLeaderboard(
-    @Param('page') page: number,
-    @Param('count') count: number,
+    @Query('page') page: number,
+    @Query('count') count: number,
   ) {
-    return this.leaderboardService.findGlobalLeaderboard(page, count);
+    return this.leaderboardService.findGlobalLeaderboard(
+      Number(page),
+      Number(count),
+    );
   }
 
   @Get('friend')
   @Auth('USER')
   findFriendLeaderboard(
-    @Param('page') page: number,
-    @Param('count') count: number,
+    @Query('page') page: number,
+    @Query('count') count: number,
   ) {
-    return this.leaderboardService.findFriendLeaderboard(page, count);
+    return this.leaderboardService.findFriendLeaderboard(
+      Number(page),
+      Number(count),
+    );
   }
 }

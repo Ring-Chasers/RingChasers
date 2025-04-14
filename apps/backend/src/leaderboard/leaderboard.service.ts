@@ -1,9 +1,12 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, BadRequestException } from '@nestjs/common';
 
 @Injectable()
 export class LeaderboardService {
   findFriendLeaderboard(page: number, count: number) {
     // This is a placeholder implementation. Replace with actual logic to fetch global leaderboard data.
+    if (isNaN(page) || isNaN(count)) {
+      throw new BadRequestException('Page and count must be numbers');
+    }
     return {
       page,
       count,
@@ -24,6 +27,9 @@ export class LeaderboardService {
 
   findGlobalLeaderboard(page: number, count: number) {
     // This is a placeholder implementation. Replace with actual logic to fetch global leaderboard data.
+    if (isNaN(page) || isNaN(count)) {
+      throw new BadRequestException('Page and count must be numbers');
+    }
     return {
       page,
       count,
