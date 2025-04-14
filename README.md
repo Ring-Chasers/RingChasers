@@ -98,7 +98,17 @@ This app is not perfect and will probably never will be perfect but if you have 
 
 ### Built With
 
+* [![TypeScript][TypeScript.js]][TypeScript-url]
+
 * [![React][React.js]][React-url]
+
+* [![Nest][Nest.js]][Nest-url]
+
+* [![Firebase][Firebase.js]][Firebase-url]
+
+* [![Tailwind][Tailwind.js]][Tailwind-url]
+
+* [![TurboRepo][TurboRepo.js]][TurboRepo-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,6 +247,16 @@ Project Link: [https://github.com/Ring-Chasers/RingChasers](https://github.com/R
 [license-url]: https://github.com/Ring-Chasers/RingChasers/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kevinvargaslaracuente
+[TypeScript.js]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[product-screenshot]: images/screenshot.png
+[Nest.js]: https://img.shields.io/badge/-NestJs-ea2845?style=flat-square&logo=nestjs&logoColor=white
+[Nest-url]: https://nestjs.com/
+[Firebase.js]: https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34
+[Firebase-url]: https://firebase.google.com/
+[Tailwind.js]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[TurboRepo.js]: https://img.shields.io/badge/-Turborepo-EF4444?style=flat&logo=turborepo&logoColor=white
+[TurboRepo-url]: https://turbo.build/
+[product-screenshot]: images/ring_chasers_sc.png

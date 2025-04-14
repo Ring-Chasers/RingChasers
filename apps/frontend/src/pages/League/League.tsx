@@ -7,7 +7,7 @@ const League = () => {
         <h1 className="text-3xl font-extrabold tracking-tight mb-20">Leagues</h1>
       </div>
       <div className='flex justify-center'>
-        <Carousel className="" array={[1, 2, 3]} />
+        <Carousel className="" array={[<div>1</div>, <div>2</div>, <div>3</div>]} />
       </div>
     </div>
 
