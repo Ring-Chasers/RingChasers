@@ -1,6 +1,6 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
-import { FirebaseAdmin } from '../../firebase.setup';
-import { Firebase } from '../../firebaseClient.setup';
+import { FirebaseAdmin } from '../utils/firebase.setup';
+import { Firebase } from '../utils/firebaseClient.setup';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { UserDto } from './dto/user.dto';
 import { LoginDTO } from './dto/login.dto';

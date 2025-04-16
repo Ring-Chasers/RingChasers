@@ -12,6 +12,4 @@ type LeaderboardDTO = {
   count: number;
 }
 
-type HandlePageDTO = (pageCount: number) => void;
-
-export type { PlayerDTO, HandlePageDTO, LeaderboardDTO };
+export type { PlayerDTO, LeaderboardDTO };

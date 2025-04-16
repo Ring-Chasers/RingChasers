@@ -5,7 +5,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { FirebaseAdmin } from '../../firebase.setup';
+import { FirebaseAdmin } from '../utils/firebase.setup';
 
 @Injectable()
 export class AuthGuard implements CanActivate {

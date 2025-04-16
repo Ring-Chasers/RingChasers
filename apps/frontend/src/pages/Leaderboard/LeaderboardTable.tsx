@@ -1,6 +1,6 @@
-import { PlayerDTO, HandlePageDTO } from './dto/Leaderboard.dto';
-
-const LeaderboardTable = ({ leaderboard, page, handlePage } : { leaderboard: PlayerDTO[], page: number, handlePage: HandlePageDTO}) => {
+import { PlayerDTO } from './dto/Leaderboard.dto';
+import handlePage  from '../../utils/handlePage';
+const LeaderboardTable = ({ leaderboard, page, setPage } : { leaderboard: PlayerDTO[], page: number, setPage: React.Dispatch<React.SetStateAction<number>>}) => {
 
   return (
     <div className="overflow-x-auto">
@@ -24,9 +24,9 @@ const LeaderboardTable = ({ leaderboard, page, handlePage } : { leaderboard: Pla
           ))}
         </tbody>
         <tfoot className="join">
-            <button onClick={() => handlePage(-1)} className="join-item btn btn-secondary" disabled={page === 1}>«</button>
+            <button onClick={() => handlePage(page, -1, setPage)} className="join-item btn btn-secondary" disabled={page === 1}>«</button>
             <button className="join-item btn">Page {page}</button>
-            <button onClick={() => handlePage(1)} className="join-item btn btn-secondary">»</button>
+            <button onClick={() => handlePage(page, 1, setPage)} className="join-item btn btn-secondary">»</button>
         </tfoot>
       </table>
     </div>
